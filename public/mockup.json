@@ -1,0 +1,149 @@
+{
+    "list": [
+        {
+            "name": "갈비",
+            "num": 19903,
+            "source": "./img/gal.jpg",
+            "feature":"고기류",
+            "site":"/gal"
+        },
+        {
+            "name": "곱창",
+            "num": 11043,
+            "source": "./img/gop.jpg",
+            "feature":"고기류",
+            "site":"/gop"
+        },
+        {
+            "name": "낙지",
+            "num": 7168,
+            "source": "./img/nak.jpg",
+            "feature":"고기류",
+            "site":"/nak"
+        },
+        {
+            "name": "냉면",
+            "num": 11168,
+            "source": "./img/naeng.jpg",
+            "feature":"면류",
+            "site":"/naeng"
+        },
+        {
+            "name": "닭갈비",
+            "num": 5036,
+            "source": "./img/dak.jpg",
+            "feature":"매운맛",
+            "site":"/dak"
+        },
+        {
+            "name": "돈까스",
+            "num": 12804,
+            "source": "./img/don.jpg",
+            "feature":"고기류",
+            "site":"/don"
+        },
+        {
+            "name": "떡볶이",
+            "num": 19992,
+            "source": "./img/dduck.jpg",
+            "feature":"매운맛",
+            "site":"dduck/"
+        },
+        {
+            "name": "라면",
+            "num": 35956,
+            "source": "./img/la.jpg",
+            "feature":"매운맛",
+            "site":"/la"
+        },
+        {
+            "name": "빵",
+            "num": 47654,
+            "source": "./img/ppang.jpg",
+            "feature":"",
+            "site":"/ppang"
+        },
+        {
+            "name": "삼겹살",
+            "num": 21738,
+            "source": "./img/sam.jpg",
+            "feature":"고기류",
+            "site":"/sam"
+        },
+        {
+            "name": "삼계탕",
+            "num": 2375,
+            "source": "./img/samgye.jpg",
+            "feature":"고기류",
+            "site":"/sam"
+        },
+        {
+            "name": "설렁탕",
+            "num": 1319,
+            "source": "./img/Seol.jpg",
+            "site":"/Seol"
+        },
+        {
+            "name": "순대",
+            "num": 7172,
+            "source": "./img/Soon.jpg",
+            "site":"/Soon"
+        },
+        {
+            "name": "짜장면",
+            "num": 5358,
+            "source": "./img/zza.jpg",
+            "feature":"면류",
+            "site":"/zza"
+        },
+        {
+            "name": "카레",
+            "num": 8367,
+            "source": "./img/Ka.jpg",
+            "feature":"",
+            "site":"/Ka"
+        },
+        {
+            "name": "칼국수",
+            "num": 10957,
+            "source": "./img/Kal.jpg",
+            "feature":"면류",
+            "site":"/Kal"
+        },
+        {
+            "name": "케이크",
+            "num": 28452,
+            "source": "./img/ke.jpg",
+            "feature":"",
+            "site":"/ke"
+        },
+        {
+            "name": "콩국수",
+            "num": 788,
+            "source": "./img/kong.jpg",
+            "feature":"면류",
+            "site":"/kong"
+        },
+        {
+            "name": "파스타",
+            "num": 21372,
+            "source": "./img/pa.jpg",
+            "feature":"면류",
+            "site":"/pa"
+        },
+        {
+            "name": "피자",
+            "num": 22863,
+            "source": "./img/pi.jpg",
+            "feature":"",
+            "site":"/pi"    
+        },
+        {
+            "name": "햄버거",
+            "num": 7456,
+            "source": "./img/ham.jpg",
+            "feature":"",
+            "site":"/ham"
+        }
+    ]
+}
