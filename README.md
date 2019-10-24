@@ -29,7 +29,7 @@
 
 저는 이를 활용하여, 인스타그램, 다음블로그, 네이버블로그의 게시물 수 통계를 내어 사용자들에게 보여주고 싶었습니다. 그 결과가 바로 **냠냠.GG**입니다.
 
-![인스타그램](C:\Users\Admin\Desktop\OSS CAMP 소프트웨어 파일\프로젝트)
+![인스타그램](C:/Users/Admin/Desktop/OSS CAMP 소프트웨어 파일/프로젝트)
 
 
 ## Project setup
