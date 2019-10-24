@@ -14,7 +14,7 @@
     <template slot="title"><router-link to="/foodlist">FoodList</router-link></template>
   </el-menu-item>  
   <el-menu-item index="4"><router-link to="/signup">Sign-Up</router-link></el-menu-item>
-  <el-menu-item index="5">Login</el-menu-item>
+ <el-menu-item index="5"><router-link to="/">Log Out</router-link></el-menu-item>
 </el-menu>
     </div>
    <div id="Main">

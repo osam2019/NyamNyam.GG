@@ -10,14 +10,13 @@
   text-color="#fff"
   active-text-color="#ffd04b">
   <el-menu-item index="1"><router-link to="/">Home</router-link></el-menu-item>
-  <el-submenu index="2">
+  <el-menu-item index="2">
     <template slot="title"><router-link to="/foodlist">FoodList</router-link></template>
-    <el-menu-item index="2-1"><router-link to="/dduck">떡볶이</router-link></el-menu-item>
-    <el-menu-item index="2-2">item two</el-menu-item>
-    <el-menu-item index="2-3">item three</el-menu-item>
+  </el-menu-item>  
 
-    </el-submenu>
-  <el-menu-item index="3">Login</el-menu-item>
+	
+  <el-menu-item index="4"><router-link to="/signup">Sign-Up</router-link></el-menu-item>
+  <el-menu-item index="5">Login</el-menu-item>
 </el-menu>
 
 	<div id="Main">	
@@ -59,7 +58,7 @@
 	<input id="searchbtn" v-model="SearchValue" type="text" placeholder="search">
 	</div>
 	<div id="statistic">
-	<el-tabs type="card" @tab-click="handleClick">
+	<el-tabs id="tabMenu" type="card" @tab-click="handleClick">
 	<el-tab-pane label="모든음식"></el-tab-pane>
     <el-tab-pane label="매운맛"></el-tab-pane>
     <el-tab-pane label="면류"></el-tab-pane>
@@ -68,23 +67,23 @@
 
 		<template  v-if="display==0">
 		     <div id="ranking" v-for="(item, index) in filterItem('모든음식')">
-		         <router-link v-bind:to="item.site"><span id="rankleft">{{index+1}}</span><img v-bind:src="item.source">{{item.name}}: {{item.num}}건</router-link>
+		         <router-link v-bind:to="item.site"><span id="rankleft">{{index+1}}.</span><img v-bind:src="item.source"><template id="post">{{item.name}}: {{item.num}}건</template></router-link>
 			</div>	
 	    </template>
 		<template  v-else-if="display==1">
 		     <div id="ranking" v-for="(item, index) in filterItem('매운맛')">
-		         <router-link v-bind:to="item.site"><span id="rankleft">{{index+1}}</span><img v-bind:src="item.source">{{item.name}}: {{item.num}}건</router-link>
+		         <router-link v-bind:to="item.site"><span id="rankleft">{{index+1}}.</span><img v-bind:src="item.source"><template id="post">{{item.name}}: {{item.num}}건</template></router-link>
 			</div>	
 	    </template>
 		<template  v-else-if="display==2">
 		     <div id="ranking" v-for="(item, index) in filterItem('면류')">
-		        <router-link v-bind:to="item.site">{{index+1}}</span><img v-bind:src="item.source">{{item.name}}: {{item.num}}건</router-link>
+		        <router-link v-bind:to="item.site"><span id="rankleft">{{index+1}}.</span><img v-bind:src="item.source"><template id="post">{{item.name}}: {{item.num}}건</template></router-link>
 			</div>	
 	    </template>
 		
 		<template  v-else>
 		     <div id="ranking" v-for="(item, index) in filterItem('고기류')">
-		         <router-link v-bind:to="item.site">{{index+1}}</span><img v-bind:src="item.source">{{item.name}}: {{item.num}}건</router-link>
+		         <router-link v-bind:to="item.site"><span id="rankleft">{{index+1}}.</span><img v-bind:src="item.source"><template id="post">{{item.name}}: {{item.num}}건</template></router-link>
 			</div>	
 	    </template>
 
@@ -177,6 +176,9 @@ export default{
 </script>
 
 <style scoped>
+#post{
+}
+
 a{
 text-decoration: none;
 color:#000000;
@@ -215,70 +217,43 @@ background-color:#0174DF;
 
 
 #MainLeft{
+	text-align:center;
 	margin-top:15px;
 	float:left;
 	height:20%;
 	width:70%;
-	margin-left:1%;
+	margin-left:5%;
 	background-color:#ffffff;
 	padding:10px;
+	padding-right:0px;
 }
 
 #Main #title{
 	text-align:center;
-	font-size:30px;
+	font-size:45px;
 	padding:20px;
 	color:#ffffff;
 }
 
 #MainLeft #first-line img{
 	padding:0.1%;
-	width:19.5%;
-	height:310px;
+	width:210px;
+	height:210px;
 }
 
-#MainLeft #second-line img{
-	padding:0.1%;
-	width:19.5%;
-	height:auto;
-}
-
-#MainLeft #third-line img{
-	padding:0.1%;
-	width:19.5%;
-	height:310px;
-}
-
-#MainLeft #fourth-line img{
-	padding:0% 7% 0% 7%;
-	width:5%;
-	height:auto;
-}
-
-#MainLeft #fifth-line img{
-	padding:0.1%;
-	width:19.5%;
-	height:310px;
-}
-
-#MainLeft #sixth-line img{
-	padding:0% 7% 0% 7%;
-	width:5%;
-	height:auto;
-}
 
 
 #MainRight{
-  margin-top:60px;
+  margin-top:15px;
   width:20%;
   float:right;
   background-color:#ffffff;
-  margin-right:3%;
+  margin-right:4%;
 }
 
 #ranking{
 height:50px;
-text-align:center;
+text-align:left;
 border-top:1px solid #e6e6e6;
 border-bottom:1px solid #e6e6e6;
 color:#000000;
@@ -287,8 +262,8 @@ color:#000000;
 	text-align:left;
 }
 #ranking img{
-	width:40px;
-	height:40px;
+	width:20px;
+	height:20px;
 }
 
 #ranking:hover{
@@ -296,7 +271,8 @@ background:rgb(232, 245, 254);
 }
 
 #MainRight #search #searchbtn{
-	margin-top:30px;
+	margin-left:80px;
+	text-align:center;
 	margin-bottom:-50px;
 	width:50%;
 	height:1%;
@@ -307,5 +283,10 @@ background:rgb(232, 245, 254);
 	margin-top:100px;
 	border:1px #000000;
 	font-size:25px;
+}
+
+#tabMenu{
+margin-top:-60px;
+
 }
 </style>

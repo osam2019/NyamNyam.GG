@@ -26,6 +26,8 @@ import pi from '@/components/pi'
 import ham from '@/components/ham'
 import experiment from '@/views/experiment'
 import signUp from '@/views/SignUp'
+import login from '@/views/login'
+import HomepageLogin from '@/components/HomepageLogin'
 
 Vue.use(Router)
 
@@ -161,6 +163,16 @@ export default new Router({
       path:'/signUp', 
       name:'signUp',
       component:signUp
+    },
+    {
+      path:'/login',
+      name:'login',
+      component:login
+    },
+    {
+      path:'/HomepageLogin',
+      name:'HomepageLogin',
+      component:HomepageLogin
     }
   ]
 });
