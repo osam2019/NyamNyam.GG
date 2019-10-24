@@ -54,17 +54,18 @@
 전 화면 하단의 아이콘 클릭시 주변의 맛집 
 
 
-## Project setup
+# 기술 스택
+<br/>
+vue.js(frontend) 화면구성
+element.ui 화면구성
+
+# 필수조건(설치 안내)
+
+## 다음의 작업을 수행해야 합니다.
 ```
 npm install
-
-
 ```
-
-### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
