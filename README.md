@@ -1,4 +1,4 @@
-# finall
+# 냠냠.GG
 
 ## Project setup
 ```
